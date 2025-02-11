@@ -19,7 +19,6 @@ class Banco:
             print("Usuario creado con éxito")
         else:
             print("OPERACION INVALIDA, ESTA CUENTA YA EXISTE")
-            
 
     def retirar(self, cuenta, monto):
         usuario = self.buscarCuenta(cuenta)
@@ -38,6 +37,8 @@ class Banco:
         if usuario:
             usuario._saldo += monto
             print("Deposito exitoso")
+        else:
+           print("Cuenta no encontrada")
 
 
     def buscarCuenta(self, cuenta):
@@ -47,9 +48,3 @@ class Banco:
             else:
                 return None
 
-# banco1 = Banco()
-# banco1.crearUsuario("Liang", "0009876")
-# banco1.crearUsuario("Ever", "0001234")
-# print(banco1._users)
-# print(banco1.buscarCuenta("0009876"))
-# banco1.imprimirInformacion("0001234")

@@ -25,12 +25,12 @@ while True:
             limpieza.limpíarPantalla()
         case 3:
             counts = input("Ingrese numero de cuenta: ")
-            monto = int(input("Ingrese monto a depositar"))
+            monto = int(input("Ingrese monto a depositar: "))
             bancoLiang.depositar(counts, monto)
             limpieza.limpíarPantalla()
         case 4:
             counts = input("Ingrese numero de cuenta: ")
-            monto = int(input("Ingrese monto a depositar"))
+            monto = int(input("Ingrese monto a retirar: "))
             bancoLiang.retirar(counts, monto)
             limpieza.limpíarPantalla()
         case 5:
