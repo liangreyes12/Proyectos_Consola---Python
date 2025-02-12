@@ -1,12 +1,12 @@
 from time import sleep
-import os
+from os import name, system
 
 def limpíarPantalla():
-    sistema = os.name
+    sistema = name
     if sistema == "nt":
         sleep(2)
-        os.system("cls")
+        system("cls")
     else:
         sleep(2)
-        os.system("clear")
+        system("clear")
         
