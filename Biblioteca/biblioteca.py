@@ -2,25 +2,38 @@ from libros import Libros
 
 class Biblioteca:
 
-      def __init__(self, nombre):
-          self._nombre = nombre
-          self._inventario = []
+      def __init__(self):
+         self._inventario = []
 
       def registrarLibro(self, nombre, autor, genero, ISBN):
-          libro = Libros(nombre, autor, genero, ISBN)
-          if libro.ISBN in self._inventario:
-             print(f"ESTE LIBRO YA ESTA REGISTRADO")
-          else:
-             self._inventario.append(libro)
-             print(f"Libro registrado exitosamente")
+         for libro in self._inventario:
+            if libro.ISBN == ISBN:
+                  print(f"ESTE LIBRO YA EXISTE EN EL INVENTARIO")
+                  return  
 
-      def busquedaISBN(self, ISBN):
-          for i in self._inventario:
-              if i.ISBN == ISBN:
-                 return ISBN
-              else:
-                 return None
+         libro = Libros(nombre, autor, genero, ISBN)
+         self._inventario.append(libro)
 
-biblio1 = Biblioteca("La salle")
-biblio1.registrarLibro("Cien años de soledad", "Gabriel García Marquez", "Realismo Mágico", "009876")
-biblio1.registrarLibro("Cien años de soledad", "Gabriel García Marquez", "Realismo Mágico", "0009876")
+      def buscarPorISBN(self, ISBN):
+         for i in self._inventario:
+            if i.ISBN == ISBN:
+               return f"{i.ISBN} => {i.nombre} => {i.genero}"
+         return f"LIBRO NO PUDO SER ENCONTRADO"
+      
+      def buscarPorNombre(self, nombre):
+         for i in self._inventario:
+            if i.nombre == nombre:
+               return f"{i.ISBN} => {i.nombre} => {i.genero}"
+         return f"LIBRO NO PUDO SER ENCONTRADO"
+
+      def buscarPorAutor(self, autor):
+         for i in self._inventario:
+            if i.autor == autor:
+               print(f"{i.ISBN} => {i.nombre} => {i.genero}")
+         return f"LIBRO NO PUDO SER ENCONTRADO"
+
+      def buscarPorGenero(self, genero):
+         for i in self._inventario:
+            if i.genero == genero:
+               print(f"{i.ISBN} => {i.nombre} => {i.genero}")
+         return f"LIBRO NO PUDO SER ENCONTRADO"
