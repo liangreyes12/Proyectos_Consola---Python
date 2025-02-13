@@ -4,8 +4,9 @@ from time import sleep
 def limpiarPantalla():
    sistema = name
    if sistema == "nt":
+      sleep(2)
       system("cls")
-      sleep(2.3)
    else:
+      sleep(2)
       system("clear")
-      sleep(2.3)
+      
