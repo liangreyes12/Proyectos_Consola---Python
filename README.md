@@ -1,4 +1,4 @@
-# 📌 Proyectos Python
+# 📌 Proyectos Python por Consola
 
 Bienvenido a este repositorio donde se recopilan diversos proyectos desarrollados en Python. Cada proyecto está diseñado para resolver diferentes problemas y demostrar el uso de distintas tecnologías y paradigmas de programación.
 
