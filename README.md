@@ -25,7 +25,7 @@ Cada carpeta de proyecto contiene su propio archivo README.md con detalles de in
 - Si es un ejecutable de Linux debes darle permisos con:
 
   ```
-  chmod +x ./ejecutable
+  chmod +x ./nombre_del_ejecutable
   ```
 
 - En windows simplemente abre el .exe
