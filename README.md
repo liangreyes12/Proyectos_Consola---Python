@@ -8,9 +8,9 @@ Aquí encontrarás una variedad de aplicaciones y scripts organizados en carpeta
 
 ### 📂 Proyectos Actuales
 
-- _Gestor de Banco_: Aplicación de consola para crear cuentas, ver informacion de cuenta, depósitos y retiros
-- _Gestor de Biblioteca_: Permite registrar y buscar libros por distintos criterios.
-- _ForkBomb de Carpetas_: Script que genera carpetas de forma infinita.
+- **_Gestor de Banco_**: Aplicación de consola para crear cuentas, ver informacion de cuenta, depósitos y retiros
+- **_Gestor de Biblioteca_**: Permite registrar y buscar libros por distintos criterios.
+- **_ForkBomb de Carpetas_**: Script que genera carpetas de forma infinita.
 
 ## 📖 Cómo Usar
 
